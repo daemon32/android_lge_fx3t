@@ -11,7 +11,7 @@ Or, alternatively, you can add this to your .repo/local_manifests/ with this tem
 <manifest>
 	<remote name="fx3t" fetch="https://github.com/" />
 	<project path="device/lge/fx3t" name="daemon32/android_lge_fx3t.git" remote="fx3t" revision="master" />
-	<project path="kernel/lge/fx3t" name="daemon32/android_kernel_lge_fx3t.git" remote="fx3t" revision="master"
+	<project path="kernel/lge/fx3t" name="daemon32/android_kernel_lge_fx3t.git" remote="fx3t" revision="master" />
 </manifest>
 ```
 
