@@ -1,0 +1,12 @@
+# system.prop for fx3t
+#
+
+# cannot take spaces
+rild.libargs=-d /dev/smd0
+ro.telephony.default_network=9
+DEVICE_PROVISIONED=1
+gsm.apn.sim.operator.numeric=310260
+gsm.operator.numeric=310260
+gsm.sim.operator.numeric=310260
+telephony.lteOnGsmDevice=1
+ro.sf.lcd_density=240
