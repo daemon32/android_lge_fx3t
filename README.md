@@ -3,10 +3,24 @@ LG Optimus F3 KitKat device tree
 
 CM11 Device tree for LG Optimus F3
 
+####Functionality status:
+- [x] Calls/texts (GSM/GPRS/EDGE/HSPA)
+- [ ] Mobile Data
+- [ ] Wifi
+- [ ] Bluetooth
+- [x] Framebuffer/3D Acceleration
+- [x] GLES 1/2/3
+- [ ] GPS
+- [x] Accelerometer/Rotation
+- [x] Compass
+- [ ] Auto brightness
+- [x] Proximity sensor
+
+####Instructions:
 Copy the contents of this folder to: device/lge/fx3t
 
 Or, alternatively, you can add this to your .repo/local_manifests/ with this template:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote name="fx3t" fetch="https://github.com/" />
