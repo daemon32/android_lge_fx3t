@@ -15,6 +15,7 @@ CM11 Device tree for LG Optimus F3
 - [x] Compass
 - [ ] Auto brightness
 - [x] Proximity sensor
+- [x] Vibrator
 
 ####Instructions:
 Copy the contents of this folder to: device/lge/fx3t
