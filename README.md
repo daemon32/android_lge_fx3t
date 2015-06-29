@@ -5,12 +5,12 @@ CM11 Device tree for LG Optimus F3
 
 ####Functionality status:
 - [x] Calls/texts (GSM/GPRS/EDGE/HSPA)
-- [ ] Mobile Data
-- [ ] Wifi
+- [x] Mobile Data
+- [x] Wifi
 - [ ] Bluetooth
 - [x] Framebuffer/3D Acceleration
 - [x] GLES 1/2/3
-- [ ] GPS
+- [x] GPS
 - [x] Accelerometer/Rotation
 - [x] Compass
 - [ ] Auto brightness
