@@ -170,8 +170,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #common build.props
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10 \
+    ro.ril.hsxpa=3 \
+    ro.ril.gprsclass=12 \
     persist.radio.add_power_save=1 \
     persist.radio.dont_use_dsd=true \
     persist.radio.apm_sim_not_pwdn=1 \
@@ -182,7 +182,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     af.resampler.quality=4 \
     persist.audio.fluence.mode=endfire \
     persist.audio.vr.enable=false \
-    persist.audio.handset.mic=digital \
+    persist.audio.handset.mic=analog \
     ro.use_data_netmgrd=true \
     lpa.decode=true \
     lpa.use-stagefright=true \
@@ -212,7 +212,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     persist.hwc.mdpcomp.enable=true \
     debug.mdpcomp.logs=0 \
-    ro.telephony.ril_class=LGEQualcommUiccRIL \
+    ro.telephony.ril_class=SamsungQualcommRIL \
     ro.telephony.call_ring.multiple=0
 
 # For userdebug builds
