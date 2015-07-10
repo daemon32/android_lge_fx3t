@@ -18,12 +18,15 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#define BTM_DEF_LOCAL_NAME    "LG Optimus F3"
+
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-#define BLUETOOTH_QCOM_SW TRUE
 #define BTA_HOST_INTERLEAVE_SEARCH TRUE
 // skips conn update at conn completion
 #define BTA_BLE_SKIP_CONN_UPD TRUE
 // Disables read remote device feature
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
+#define PRELOAD_START_TIMEOUT_MS 2000
+#define PRELOAD_MAX_RETRY_ATTEMPTS 3
 
 #endif

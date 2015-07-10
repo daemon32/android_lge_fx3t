@@ -167,6 +167,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
 
+# Proprietary
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/lge/fx3t/proprietary,system)
+
 #common build.props
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \

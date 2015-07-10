@@ -20,15 +20,17 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
 
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK      := device/lge/fx3t/releasetools/mkbootimg.mk
-BOARD_KERNEL_CMDLINE         := androidboot.hardware=qcom androidboot.selinux=permissive user_debug=31 zcache
+BOARD_KERNEL_CMDLINE         := androidboot.hardware=qcom androidboot.selinux=permissive user_debug=31 selinux=0 enforcing=0
 BOARD_KERNEL_BASE            := 0x80200000
 BOARD_MKBOOTIMG_ARGS         := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE        := 2048
 TARGET_KERNEL_SOURCE         := kernel/lge/fx3t
-TARGET_KERNEL_CONFIG         := fx3_tmus_defconfig
+TARGET_KERNEL_CONFIG         := fx3_mpcs_tmo_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_SPECIFIC_HEADER_PATH := device/lge/fx3t/include
 TARGET_NO_INITLOGO := true
+
+COMMON_GLOBAL_CFLAGS += -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
 
 # Recovery
 BOARD_USES_MMCUTILS := true
@@ -112,8 +114,9 @@ WPA_SUPPLICANT_VERSION 		:= VER_0_8_X
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_QCOM := true
+BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/fx3t/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/lge/fx3t/bluetooth/vnd_fx3t.txt
 
 # GPS
 BOARD_HAVE_NEW_QC_GPS := true
@@ -147,4 +150,3 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/lge/fx3t/releasetools/ota_
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := LG-P659,fx3t
-
